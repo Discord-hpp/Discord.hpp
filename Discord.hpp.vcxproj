@@ -19,28 +19,28 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\ciscorp\discord-api\core.h" />
-    <ClInclude Include="include\ciscorp\discord-api\gateway\v10.h" />
-    <ClInclude Include="include\ciscorp\discord-api\payloads\gateway.h" />
-    <ClInclude Include="include\ciscorp\discord.h" />
-    <ClInclude Include="include\ciscorp\discord-api\globals.h" />
-    <ClInclude Include="include\ciscorp\discord-api\payloads\common.h" />
-    <ClInclude Include="include\ciscorp\discord-api\rest\common.h" />
-    <ClInclude Include="include\ciscorp\etf.h" />
-    <ClInclude Include="include\ciscorp\fmt\args.h" />
-    <ClInclude Include="include\ciscorp\fmt\chrono.h" />
-    <ClInclude Include="include\ciscorp\fmt\color.h" />
-    <ClInclude Include="include\ciscorp\fmt\compile.h" />
-    <ClInclude Include="include\ciscorp\fmt\core.h" />
-    <ClInclude Include="include\ciscorp\fmt\format-inl.h" />
-    <ClInclude Include="include\ciscorp\fmt\format.h" />
-    <ClInclude Include="include\ciscorp\fmt\locale.h" />
-    <ClInclude Include="include\ciscorp\fmt\os.h" />
-    <ClInclude Include="include\ciscorp\fmt\ostream.h" />
-    <ClInclude Include="include\ciscorp\fmt\printf.h" />
-    <ClInclude Include="include\ciscorp\fmt\ranges.h" />
-    <ClInclude Include="include\ciscorp\fmt\xchar.h" />
-    <ClInclude Include="include\ciscorp\sysdep.h" />
+    <ClInclude Include="include\discordhpp\discord-api\core.h" />
+    <ClInclude Include="include\discordhpp\discord-api\gateway\v10.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\gateway.h" />
+    <ClInclude Include="include\discordhpp\discord.h" />
+    <ClInclude Include="include\discordhpp\discord-api\globals.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\common.h" />
+    <ClInclude Include="include\discordhpp\discord-api\rest\common.h" />
+    <ClInclude Include="include\discordhpp\etf.h" />
+    <ClInclude Include="include\discordhpp\fmt\args.h" />
+    <ClInclude Include="include\discordhpp\fmt\chrono.h" />
+    <ClInclude Include="include\discordhpp\fmt\color.h" />
+    <ClInclude Include="include\discordhpp\fmt\compile.h" />
+    <ClInclude Include="include\discordhpp\fmt\core.h" />
+    <ClInclude Include="include\discordhpp\fmt\format-inl.h" />
+    <ClInclude Include="include\discordhpp\fmt\format.h" />
+    <ClInclude Include="include\discordhpp\fmt\locale.h" />
+    <ClInclude Include="include\discordhpp\fmt\os.h" />
+    <ClInclude Include="include\discordhpp\fmt\ostream.h" />
+    <ClInclude Include="include\discordhpp\fmt\printf.h" />
+    <ClInclude Include="include\discordhpp\fmt\ranges.h" />
+    <ClInclude Include="include\discordhpp\fmt\xchar.h" />
+    <ClInclude Include="include\discordhpp\sysdep.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
