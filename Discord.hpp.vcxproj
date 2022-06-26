@@ -18,6 +18,36 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ciscorp\discord-api\core.h" />
+    <ClInclude Include="include\ciscorp\discord-api\gateway\v10.h" />
+    <ClInclude Include="include\ciscorp\discord-api\payloads\gateway.h" />
+    <ClInclude Include="include\ciscorp\discord.h" />
+    <ClInclude Include="include\ciscorp\discord-api\globals.h" />
+    <ClInclude Include="include\ciscorp\discord-api\payloads\common.h" />
+    <ClInclude Include="include\ciscorp\discord-api\rest\common.h" />
+    <ClInclude Include="include\ciscorp\etf.h" />
+    <ClInclude Include="include\ciscorp\fmt\args.h" />
+    <ClInclude Include="include\ciscorp\fmt\chrono.h" />
+    <ClInclude Include="include\ciscorp\fmt\color.h" />
+    <ClInclude Include="include\ciscorp\fmt\compile.h" />
+    <ClInclude Include="include\ciscorp\fmt\core.h" />
+    <ClInclude Include="include\ciscorp\fmt\format-inl.h" />
+    <ClInclude Include="include\ciscorp\fmt\format.h" />
+    <ClInclude Include="include\ciscorp\fmt\locale.h" />
+    <ClInclude Include="include\ciscorp\fmt\os.h" />
+    <ClInclude Include="include\ciscorp\fmt\ostream.h" />
+    <ClInclude Include="include\ciscorp\fmt\printf.h" />
+    <ClInclude Include="include\ciscorp\fmt\ranges.h" />
+    <ClInclude Include="include\ciscorp\fmt\xchar.h" />
+    <ClInclude Include="include\ciscorp\sysdep.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,9 +156,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Discord.hpp.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
