@@ -1,32 +1,22 @@
-/**
- * Discord.hpp - A fast and lightweight Discord API library, written in C++
- * Copyright 2022 (c) - the Discord.hpp contributors
- * 
- * WARNING: this code is generated from TypeScript.
- * Please check the error before use it
- */
 #pragma once
 
 #include <string>
-#include "core.h"
+#include <regex>
 
-using namespace js;
+typedef std::string snowflake;
+typedef std::string permissions;
 
-typedef std::string Snowflake;
-typedef std::string Permissions;
-
-extern object FormattingPatterns;
-
-object FormattingPatterns = as<std::shared_ptr<const>>(object{
-	object::pair{STR("User"), (new RegExp(STR("<@(?<id>\d{17,20})")))},
-	object::pair{STR("UserWithNickname"), (new RegExp(STR("<@!(?<id>\d{17,20})")))},
-	object::pair{STR("UserWithOptionalNickname"), (new RegExp(STR("<@!?(?<id>\d{17,20})")))},
-	object::pair{STR("Channel"), (new RegExp(STR("<#(?<id>\d{17,20})")))},
-	object::pair{STR("Role"), (new RegExp(STR("<@&(?<id>\d{17,20})")))},
-	object::pair{STR("Emoji"), (new RegExp(STR("<(?<animated>a)?:(?<name>\w{2,32}):(?<id>\d{17,20})")))},
-	object::pair{STR("AnimatedEmoji"), (new RegExp(STR("<(?<animated>a):(?<name>\w{2,32}):(?<id>\d{17,20})")))},
-	object::pair{STR("StaticEmoji"), (new RegExp(STR("<:(?<name>\w{2,32}):(?<id>\d{17,20})")))},
-	object::pair{STR("Timestamp"), (new RegExp(STR("<t:(?<timestamp>-?\d{1,13})(:(?<style>[tTdDfFR]))?")))},
-	object::pair{STR("DefaultStyledTimestamp"), (new RegExp(STR("<t:(?<timestamp>-?\d{1,13})")))},
-	object::pair{STR("StyledTimestamp"), (new RegExp(STR("<t:(?<timestamp>-?\d{1,13}):(?<style>[tTdDfFR])")))}
-	});
+struct FormattingPatterns
+{
+	std::regex user();						/* /<@(?<id>\d{17,20})>/ */
+	std::regex UserWithNickname();			/* /<@!(?<id>\d{17,20})>/ */
+	std::regex UserWithOptionalNickname();	/* /<@!?(?<id>\d{17,20})>/ */
+	std::regex Channel();					/* /<#(?<id>\d{17,20})>/ */
+	std::regex Role();						/* /<@&(?<id>\d{17,20})>/ */
+	std::regex Emoji();						/* /<(?<animated>a)?:(?<name>\w{2,32}):(?<id>\d{17,20})>/ */
+	std::regex AnimatedEmoji();				/* /<(?<animated>a):(?<name>\w{2,32}):(?<id>\d{17,20})>/ */
+	std::regex StaticEmoji();				/* /<:(?<name>\w{2,32}):(?<id>\d{17,20})>/ */
+	std::regex Timestamp();					/* /<t:(?<timestamp>-?\d{1,13})(:(?<style>[tTdDfFR]))?>/ */
+	std::regex DefaultStyledTimestamp();	/* /<t:(?<timestamp>-?\d{1,13})>/ */
+	std::regex StyledTimestamp();			/* /<t:(?<timestamp>-?\d{1,13}):(?<style>[tTdDfFR])>/ */
+};

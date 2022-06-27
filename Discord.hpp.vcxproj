@@ -19,14 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\discordhpp\discord-api\core.h" />
     <ClInclude Include="include\discordhpp\discord-api\gateway\v10.h" />
-    <ClInclude Include="include\discordhpp\discord-api\payloads\gateway.h" />
-    <ClInclude Include="include\discordhpp\discord.h" />
     <ClInclude Include="include\discordhpp\discord-api\globals.h" />
-    <ClInclude Include="include\discordhpp\discord-api\payloads\common.h" />
-    <ClInclude Include="include\discordhpp\discord-api\rest\common.h" />
-    <ClInclude Include="include\discordhpp\etf.h" />
+    <ClInclude Include="include\discordhpp\discord-api\voice\v4.h" />
+    <ClInclude Include="include\discordhpp\discord.h" />
     <ClInclude Include="include\discordhpp\fmt\args.h" />
     <ClInclude Include="include\discordhpp\fmt\chrono.h" />
     <ClInclude Include="include\discordhpp\fmt\color.h" />
@@ -40,7 +36,6 @@
     <ClInclude Include="include\discordhpp\fmt\printf.h" />
     <ClInclude Include="include\discordhpp\fmt\ranges.h" />
     <ClInclude Include="include\discordhpp\fmt\xchar.h" />
-    <ClInclude Include="include\discordhpp\sysdep.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
