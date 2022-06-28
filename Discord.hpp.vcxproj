@@ -21,6 +21,8 @@
   <ItemGroup>
     <ClInclude Include="include\discordhpp\discord-api\gateway\v10.h" />
     <ClInclude Include="include\discordhpp\discord-api\globals.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\permissions.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\user.h" />
     <ClInclude Include="include\discordhpp\discord-api\voice\v4.h" />
     <ClInclude Include="include\discordhpp\discord.h" />
     <ClInclude Include="include\discordhpp\fmt\args.h" />

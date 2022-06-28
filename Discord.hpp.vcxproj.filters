@@ -66,6 +66,12 @@
     <ClInclude Include="include\discordhpp\discord-api\gateway\v10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\discordhpp\discord-api\payloads\permissions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\discordhpp\discord-api\payloads\user.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
