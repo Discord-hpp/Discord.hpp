@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 #define GatewayVersion 10;
 
 /**
@@ -165,62 +167,62 @@ enum GatewayIntentBits
 /**
  * https://discord.com/developers/docs/topics/gateway#commands-and-events-gateway-events
  */
-enum GatewayDispatchEvents // meta error
+struct GatewayDispatchEvents
 {
-	ApplicationCommandPermissionsUpdate = "APPLICATION_COMMAND_PERMISSIONS_UPDATE",
-	ChannelCreate = "CHANNEL_CREATE",
-	ChannelDelete = "CHANNEL_DELETE",
-	ChannelPinsUpdate = "CHANNEL_PINS_UPDATE",
-	ChannelUpdate = "CHANNEL_UPDATE",
-	GuildBanAdd = "GUILD_BAN_ADD",
-	GuildBanRemove = "GUILD_BAN_REMOVE",
-	GuildCreate = "GUILD_CREATE",
-	GuildDelete = "GUILD_DELETE",
-	GuildEmojisUpdate = "GUILD_EMOJIS_UPDATE",
-	GuildIntegrationsUpdate = "GUILD_INTEGRATIONS_UPDATE",
-	GuildMemberAdd = "GUILD_MEMBER_ADD",
-	GuildMemberRemove = "GUILD_MEMBER_REMOVE",
-	GuildMembersChunk = "GUILD_MEMBERS_CHUNK",
-	GuildMemberUpdate = "GUILD_MEMBER_UPDATE",
-	GuildRoleCreate = "GUILD_ROLE_CREATE",
-	GuildRoleDelete = "GUILD_ROLE_DELETE",
-	GuildRoleUpdate = "GUILD_ROLE_UPDATE",
-	GuildStickersUpdate = "GUILD_STICKERS_UPDATE",
-	GuildUpdate = "GUILD_UPDATE",
-	IntegrationCreate = "INTEGRATION_CREATE",
-	IntegrationDelete = "INTEGRATION_DELETE",
-	IntegrationUpdate = "INTEGRATION_UPDATE",
-	InteractionCreate = "INTERACTION_CREATE",
-	InviteCreate = "INVITE_CREATE",
-	InviteDelete = "INVITE_DELETE",
-	MessageCreate = "MESSAGE_CREATE",
-	MessageDelete = "MESSAGE_DELETE",
-	MessageDeleteBulk = "MESSAGE_DELETE_BULK",
-	MessageReactionAdd = "MESSAGE_REACTION_ADD",
-	MessageReactionRemove = "MESSAGE_REACTION_REMOVE",
-	MessageReactionRemoveAll = "MESSAGE_REACTION_REMOVE_ALL",
-	MessageReactionRemoveEmoji = "MESSAGE_REACTION_REMOVE_EMOJI",
-	MessageUpdate = "MESSAGE_UPDATE",
-	PresenceUpdate = "PRESENCE_UPDATE",
-	StageInstanceCreate = "STAGE_INSTANCE_CREATE",
-	StageInstanceDelete = "STAGE_INSTANCE_DELETE",
-	StageInstanceUpdate = "STAGE_INSTANCE_UPDATE",
-	Ready = "READY",
-	Resumed = "RESUMED",
-	ThreadCreate = "THREAD_CREATE",
-	ThreadDelete = "THREAD_DELETE",
-	ThreadListSync = "THREAD_LIST_SYNC",
-	ThreadMembersUpdate = "THREAD_MEMBERS_UPDATE",
-	ThreadMemberUpdate = "THREAD_MEMBER_UPDATE",
-	ThreadUpdate = "THREAD_UPDATE",
-	TypingStart = "TYPING_START",
-	UserUpdate = "USER_UPDATE",
-	VoiceServerUpdate = "VOICE_SERVER_UPDATE",
-	VoiceStateUpdate = "VOICE_STATE_UPDATE",
-	WebhooksUpdate = "WEBHOOKS_UPDATE",
-	GuildScheduledEventCreate = "GUILD_SCHEDULED_EVENT_CREATE",
-	GuildScheduledEventUpdate = "GUILD_SCHEDULED_EVENT_UPDATE",
-	GuildScheduledEventDelete = "GUILD_SCHEDULED_EVENT_DELETE",
-	GuildScheduledEventUserAdd = "GUILD_SCHEDULED_EVENT_USER_ADD",
-	GuildScheduledEventUserRemove = "GUILD_SCHEDULED_EVENT_USER_REMOVE",
+	std::string ApplicationCommandPermissionsUpdate = "APPLICATION_COMMAND_PERMISSIONS_UPDATE";
+	std::string ChannelCreate						= "CHANNEL_CREATE";
+	std::string ChannelDelete						= "CHANNEL_DELETE";
+	std::string ChannelPinsUpdate					= "CHANNEL_PINS_UPDATE";
+	std::string ChannelUpdate						= "CHANNEL_UPDATE";
+	std::string GuildBanAdd							= "GUILD_BAN_ADD";
+	std::string GuildBanRemove						= "GUILD_BAN_REMOVE";
+	std::string GuildCreate							= "GUILD_CREATE";
+	std::string GuildDelete							= "GUILD_DELETE";
+	std::string GuildEmojisUpdate					= "GUILD_EMOJIS_UPDATE";
+	std::string GuildIntegrationsUpdate				= "GUILD_INTEGRATIONS_UPDATE";
+	std::string GuildMemberAdd						= "GUILD_MEMBER_ADD";
+	std::string GuildMemberRemove					= "GUILD_MEMBER_REMOVE";
+	std::string GuildMembersChunk					= "GUILD_MEMBERS_CHUNK";
+	std::string GuildMemberUpdate					= "GUILD_MEMBER_UPDATE";
+	std::string GuildRoleCreate						= "GUILD_ROLE_CREATE";
+	std::string GuildRoleDelete						= "GUILD_ROLE_DELETE";
+	std::string GuildRoleUpdate						= "GUILD_ROLE_UPDATE";
+	std::string GuildStickersUpdate					= "GUILD_STICKERS_UPDATE";
+	std::string GuildUpdate							= "GUILD_UPDATE";
+	std::string IntegrationCreate					= "INTEGRATION_CREATE";
+	std::string IntegrationDelete					= "INTEGRATION_DELETE";
+	std::string IntegrationUpdate					= "INTEGRATION_UPDATE";
+	std::string InteractionCreate					= "INTERACTION_CREATE";
+	std::string InviteCreate						= "INVITE_CREATE";
+	std::string InviteDelete						= "INVITE_DELETE";
+	std::string MessageCreate						= "MESSAGE_CREATE";
+	std::string MessageDelete						= "MESSAGE_DELETE";
+	std::string MessageDeleteBulk					= "MESSAGE_DELETE_BULK";
+	std::string MessageReactionAdd					= "MESSAGE_REACTION_ADD";
+	std::string MessageReactionRemove				= "MESSAGE_REACTION_REMOVE";
+	std::string MessageReactionRemoveAll			= "MESSAGE_REACTION_REMOVE_ALL";
+	std::string MessageReactionRemoveEmoji			= "MESSAGE_REACTION_REMOVE_EMOJI";
+	std::string MessageUpdate						= "MESSAGE_UPDATE";
+	std::string PresenceUpdate						= "PRESENCE_UPDATE";
+	std::string StageInstanceCreate					= "STAGE_INSTANCE_CREATE";
+	std::string StageInstanceDelete					= "STAGE_INSTANCE_DELETE";
+	std::string StageInstanceUpdate					= "STAGE_INSTANCE_UPDATE";
+	std::string Ready								= "READY";
+	std::string Resumed								= "RESUMED";
+	std::string ThreadCreate						= "THREAD_CREATE";
+	std::string ThreadDelete						= "THREAD_DELETE";
+	std::string ThreadListSync						= "THREAD_LIST_SYNC";
+	std::string ThreadMembersUpdate					= "THREAD_MEMBERS_UPDATE";
+	std::string ThreadMemberUpdate					= "THREAD_MEMBER_UPDATE";
+	std::string ThreadUpdate						= "THREAD_UPDATE";
+	std::string TypingStart							= "TYPING_START";
+	std::string UserUpdate							= "USER_UPDATE";
+	std::string VoiceServerUpdate					= "VOICE_SERVER_UPDATE";
+	std::string VoiceStateUpdate					= "VOICE_STATE_UPDATE";
+	std::string WebhooksUpdate						= "WEBHOOKS_UPDATE";
+	std::string GuildScheduledEventCreate			= "GUILD_SCHEDULED_EVENT_CREATE";
+	std::string GuildScheduledEventUpdate			= "GUILD_SCHEDULED_EVENT_UPDATE";
+	std::string GuildScheduledEventDelete			= "GUILD_SCHEDULED_EVENT_DELETE";
+	std::string GuildScheduledEventUserAdd			= "GUILD_SCHEDULED_EVENT_USER_ADD";
+	std::string GuildScheduledEventUserRemove		= "GUILD_SCHEDULED_EVENT_USER_REMOVE";
 };
