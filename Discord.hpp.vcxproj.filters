@@ -75,6 +75,9 @@
     <ClInclude Include="include\discordhpp\discord-api\payloads\emoji.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\discordhpp\discord-api\payloads\sticker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
