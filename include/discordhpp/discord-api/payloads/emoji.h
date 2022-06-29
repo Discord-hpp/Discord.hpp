@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
 #include "permissions.h"
 #include "user.h"
@@ -29,8 +30,10 @@ struct APIEmoji : APIPartialEmoji
 {
 	/**
 	 * Roles this emoji is whitelisted to
+	 * 
+	 * @note I think we will use JSON parse
 	 */
-	APIRole roles; // array of role object ids, please help me merge this!
+	std::vector<Snowflake> roles;
 	/**
 	 * User that created this emoji
 	 */
