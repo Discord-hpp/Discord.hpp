@@ -21,7 +21,11 @@
   <ItemGroup>
     <ClInclude Include="include\discordhpp\discord-api\gateway\v10.h" />
     <ClInclude Include="include\discordhpp\discord-api\globals.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\channel.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\common.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\emoji.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\gateway.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\oauth2.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\permissions.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\sticker.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\user.h" />

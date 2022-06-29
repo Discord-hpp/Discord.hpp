@@ -17,7 +17,7 @@ enum StickerType
 	/**
 	 * A sticker uploaded to a Boosted guild for the guild's members
 	 */
-	 Guild,
+	Guild,
 };
 
 /**

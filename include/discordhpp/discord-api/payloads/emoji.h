@@ -30,8 +30,6 @@ struct APIEmoji : APIPartialEmoji
 {
 	/**
 	 * Roles this emoji is whitelisted to
-	 * 
-	 * @note I think we will use JSON parse
 	 */
 	std::vector<Snowflake> roles;
 	/**
