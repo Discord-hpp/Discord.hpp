@@ -50,3 +50,77 @@ struct APIGatewayBotInfo : APIGatewayInfo
 	 */
 	APIGatewaySessionStartLimit session_start_limit;
 };
+
+struct PresenceUpdateStatus
+{
+	std::string Online = "online";
+	std::string DoNotDisturb = "dnd";
+	std::string Idle = "idle";
+	/**
+	 * Invisible and shown as offline
+	 */
+	std::string Invisible = "invisible";
+	std::string Offline = "offline";
+};
+
+/**
+ * @unstable This struct is currently not documented by Discord but has known values which we will try to keep up to date.
+ * Values might be added or removed without a major version bump.
+ */
+struct ActivityPlatform
+{
+	std::string Desktop = "desktop";
+	std::string Xbox = "xbox";
+	std::string Samsung = "samsung";
+	std::string IOS = "ios";
+	std::string Android = "android";
+	std::string Embedded = "embedded";
+	std::string PS4 = "ps4";
+	std::string PS5 = "ps5";
+};
+
+/**
+ * https://discord.com/developers/docs/topics/gateway#activity-object-activity-types
+ */
+enum ActivityType
+{
+	/**
+	 * Playing {game}
+	 */
+	Playing,
+	/**
+	 * Streaming {details}
+	 */
+	Streaming,
+	/**
+	 * Listening to {name}
+	 */
+	Listening,
+	/**
+	 * Watching {details}
+	 */
+	Watching,
+	/**
+	 * {emoji} {details}
+	 */
+	Custom,
+	/**
+	 * Competing in {name}
+	 */
+	Competing,
+};
+
+/**
+ * https://discord.com/developers/docs/topics/gateway#activity-object-activity-timestamps
+ */
+struct GatewayActivityTimestamps 
+{
+	/**
+	 * Unix time (in milliseconds) of when the activity started
+	 */
+	unsigned int start;
+	/**
+	 * Unix time (in milliseconds) of when the activity ends
+	 */
+	unsigned int end;
+};
