@@ -18,6 +18,39 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\discordhpp\discord-api\gateway\v10.h" />
+    <ClInclude Include="include\discordhpp\discord-api\globals.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\channel.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\common.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\emoji.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\gateway.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\oauth2.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\permissions.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\sticker.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\user.h" />
+    <ClInclude Include="include\discordhpp\discord-api\voice\v4.h" />
+    <ClInclude Include="include\discordhpp\discord.h" />
+    <ClInclude Include="include\discordhpp\fmt\args.h" />
+    <ClInclude Include="include\discordhpp\fmt\chrono.h" />
+    <ClInclude Include="include\discordhpp\fmt\color.h" />
+    <ClInclude Include="include\discordhpp\fmt\compile.h" />
+    <ClInclude Include="include\discordhpp\fmt\core.h" />
+    <ClInclude Include="include\discordhpp\fmt\format-inl.h" />
+    <ClInclude Include="include\discordhpp\fmt\format.h" />
+    <ClInclude Include="include\discordhpp\fmt\locale.h" />
+    <ClInclude Include="include\discordhpp\fmt\os.h" />
+    <ClInclude Include="include\discordhpp\fmt\ostream.h" />
+    <ClInclude Include="include\discordhpp\fmt\printf.h" />
+    <ClInclude Include="include\discordhpp\fmt\ranges.h" />
+    <ClInclude Include="include\discordhpp\fmt\xchar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -118,6 +151,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,9 +160,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Discord.hpp.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
