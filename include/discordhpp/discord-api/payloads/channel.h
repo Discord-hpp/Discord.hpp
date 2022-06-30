@@ -69,6 +69,17 @@ enum ChannelType
 	GuildForum,
 };
 
+int TextChannelType = {
+	DM 
+	| GroupDM 
+	| GuildNews
+	| GuildPublicThread
+	| GuildPrivateThread
+	| GuildNewsThread
+	| GuildText
+	| GuildForum
+};
+
 /**
  * Not documented, but partial only includes id, name, and type
  */
