@@ -80,6 +80,17 @@ int TextChannelType = {
 	| GuildForum
 };
 
+int GuildChannelType = {
+	GuildText 
+	| GuildForum
+	| GuildVoice 
+	| GuildNews 
+	| GuildNewsThread 
+	| GuildPublicThread 
+	| GuildPrivateThread 
+	| GuildStageVoice 
+};
+
 /**
  * Not documented, but partial only includes id, name, and type
  */
