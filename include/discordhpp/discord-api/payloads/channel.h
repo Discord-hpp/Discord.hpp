@@ -87,7 +87,7 @@ struct APIPartialChannel
 	/**
 	 * The name of the channel (2-100 characters)
 	 */
-	std::string name;
+	std::optional<std::string> name;
 };
 
 enum VideoQualityMode 

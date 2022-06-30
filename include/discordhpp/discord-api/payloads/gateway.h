@@ -118,9 +118,37 @@ struct GatewayActivityTimestamps
 	/**
 	 * Unix time (in milliseconds) of when the activity started
 	 */
-	unsigned int start;
+	std::optional<unsigned int> start;
 	/**
 	 * Unix time (in milliseconds) of when the activity ends
 	 */
-	unsigned int end;
+	std::optional<unsigned int> end;
+};
+
+/**
+ * https://discord.com/developers/docs/topics/gateway#activity-object-activity-flags
+ */
+enum ActivityFlags
+{
+	Instance = 1 << 0,
+	Join = 1 << 1,
+	Spectate = 1 << 2,
+	JoinRequest = 1 << 3,
+	Sync = 1 << 4,
+	Play = 1 << 5,
+	PartyPrivacyFriends = 1 << 6,
+	PartyPrivacyVoiceChannel = 1 << 7,
+	Embedded = 1 << 8,
+};
+
+struct GatewayActivityButton
+{
+	/**
+	 * The text shown on the button (1-32 characters)
+	 */
+	std::string label;
+	/**
+	 * The url opened when clicking the button (1-512 characters)
+	 */
+	std::string url;
 };

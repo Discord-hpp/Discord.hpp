@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <optional>
 
 #include "user.h"
 #include "../globals.h"
@@ -42,7 +43,7 @@ struct APISticker
 	/**
 	 * For standard stickers, ID of the pack the sticker is from
 	 */
-	Snowflake pack_id;
+	std::optional<Snowflake> pack_id;
 	/**
 	 * Name of the sticker
 	 */
@@ -59,7 +60,7 @@ struct APISticker
 	 * Previously the sticker asset hash, now an empty string
 	 * @deprecated
 	 */
-	char asset;
+	std::optional<char> asset;
 	/**
 	 * Type of sticker
 	 *
@@ -75,17 +76,52 @@ struct APISticker
 	/**
 	 * Whether this guild sticker can be used, may be false due to loss of Server Boosts
 	 */
-	bool available;
+	std::optional<bool> available;
 	/**
 	 * ID of the guild that owns this sticker
 	 */
-	Snowflake guild_id;
+	std::optional<Snowflake> guild_id;
 	/**
 	 * The user that uploaded the guild sticker
 	 */
-	APIUser user;
+	std::optional<APIUser> user;
 	/**
 	 * The standard sticker's sort order within its pack
 	 */
-	unsigned int sort_value;
+	std::optional<unsigned int> sort_value;
+};
+
+/**
+ * https://discord.com/developers/docs/resources/sticker#sticker-pack-object
+ */
+struct APIStickerPack 
+{
+	/**
+	 * ID of the sticker pack
+	 */
+	Snowflake id;
+	/**
+	 * The stickers in the pack
+	 */
+	std::vector<APISticker> stickers;
+	/**
+	 * Name of the sticker pack
+	 */
+	std::string name;
+	/**
+	 * ID of the pack's SKU
+	 */
+	Snowflake sku_id;
+	/**
+	 * ID of a sticker in the pack which is shown as the pack's icon
+	 */
+	std::optional<Snowflake> cover_sticker_id;
+	/**
+	 * Description of the sticker pack
+	 */
+	std::string description;
+	/**
+	 * ID of the sticker pack's banner image
+	 */
+	std::optional<Snowflake> banner_asset_id;
 };

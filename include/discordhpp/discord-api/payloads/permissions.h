@@ -4,6 +4,8 @@
  * Resource: https://discord.com/developers/docs/topics/permissions
  */
 #include <string>
+#include <optional>
+
 #include "../globals.h"
 
 /**
@@ -14,15 +16,15 @@ struct APIRoleTags
 	/**
 	 * The id of the bot this role belongs to
 	 */
-	Snowflake bot_id;
+	std::optional<Snowflake> bot_id;
 	/**
 	 * Whether this is the guild's premium subscriber role
 	 */
-	bool premium_subscriber;
+	std::optional<bool> premium_subscriber;
 	/**
 	 * The id of the integration this role belongs to
 	 */
-	Snowflake integration_id;
+	std::optional<Snowflake> integration_id;
 };
 
 /**
@@ -49,11 +51,11 @@ struct APIRole
 	/**
 	 * The role icon hash
 	 */
-	std::string icon;
+	std::optional<std::string> icon;
 	/**
 	 * The role unicode emoji as a standard emoji
 	 */
-	std::string unicode_emoji;
+	std::optional<std::string> unicode_emoji;
 	/**
 	 * Position of this role
 	 */
@@ -75,5 +77,5 @@ struct APIRole
 	/**
 	 * The tags this role has
 	 */
-	APIRoleTags tags;
+	std::optional<APIRoleTags> tags;
 };

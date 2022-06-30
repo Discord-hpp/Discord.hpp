@@ -2,6 +2,7 @@
 
 #include <string>
 #include <vector>
+#include <optional>
 
 #include "permissions.h"
 #include "user.h"
@@ -20,7 +21,7 @@ struct APIPartialEmoji
 	/**
 	 * Whether this emoji is animated
 	 */
-	bool animated;
+	std::optional<bool> animated;
 };
 
 /**
@@ -31,21 +32,21 @@ struct APIEmoji : APIPartialEmoji
 	/**
 	 * Roles this emoji is whitelisted to
 	 */
-	std::vector<Snowflake> roles;
+	std::optional<std::vector<Snowflake>> roles;
 	/**
 	 * User that created this emoji
 	 */
-	APIUser user;
+	std::optional<APIUser> user;
 	/**
 	 * Whether this emoji must be wrapped in colons
 	 */
-	bool require_colons;
+	std::optional<bool> require_colons;
 	/**
 	 * Whether this emoji is managed
 	 */
-	bool managed;
+	std::optional<bool> managed;
 	/**
 	 * Whether this emoji can be used, may be false due to loss of Server Boosts
 	 */
-	bool available;
+	std::optional<bool> available;
 };
