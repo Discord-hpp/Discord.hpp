@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <type_traits>
 #include <optional>
 
 #include "emoji.h"
@@ -86,9 +87,12 @@ enum ChannelFlags
 	Pinned = 1 << 1,
 };
 
-// It seems like wrong
-template <typename T>
-struct APIChannelBase : ChannelType, APIPartialChannel
+/**
+ * This interface is used to allow easy extension for other channel types. While
+ * also allowing `APIPartialChannel` to be used without breaking.
+ */
+template<typename T> struct APIChannelBase 
+	: std::extent<ChannelType, T>, APIPartialChannel
 {
 	T type;
 	std::optional<ChannelFlags> flags;
