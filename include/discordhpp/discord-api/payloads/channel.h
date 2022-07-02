@@ -1,7 +1,6 @@
 #pragma once
 
 #include <string>
-#include <type_traits>
 #include <optional>
 
 #include "emoji.h"
@@ -88,13 +87,13 @@ enum ChannelFlags
 };
 
 /**
- * This interface is used to allow easy extension for other channel types. While
+ * This struct is used to allow easy extension for other channel types. While
  * also allowing `APIPartialChannel` to be used without breaking.
  */
-template<typename T> struct APIChannelBase 
-	: std::extent<ChannelType, T>, APIPartialChannel
+template<ChannelType value>
+struct APIChannelBase : APIPartialChannel
 {
-	T type;
+	ChannelType type;
 	std::optional<ChannelFlags> flags;
 };
 
