@@ -2,6 +2,7 @@
 
 #include <string>
 #include <vector>
+#include <algorithm>
 #include <optional>
 
 #include "permissions.h"
@@ -32,6 +33,7 @@ struct APIEmoji : APIPartialEmoji
 	/**
 	 * Roles this emoji is whitelisted to
 	 */
+	// We need to test this if we can make an array of roles and put the id in here
 	std::optional<std::vector<Snowflake>> roles;
 	/**
 	 * User that created this emoji

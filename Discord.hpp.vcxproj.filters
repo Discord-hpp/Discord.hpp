@@ -90,6 +90,9 @@
     <ClInclude Include="include\discordhpp\discord-api\payloads\channel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\discordhpp\discord-api\payloads\guild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />

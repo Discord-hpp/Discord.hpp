@@ -25,6 +25,7 @@
     <ClInclude Include="include\discordhpp\discord-api\payloads\common.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\emoji.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\gateway.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\guild.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\oauth2.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\permissions.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\sticker.h" />
