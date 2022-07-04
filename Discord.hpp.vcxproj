@@ -26,10 +26,14 @@
     <ClInclude Include="include\discordhpp\discord-api\payloads\emoji.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\gateway.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\guild.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\index.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\oauth2.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\permissions.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\sticker.h" />
     <ClInclude Include="include\discordhpp\discord-api\payloads\user.h" />
+    <ClInclude Include="include\discordhpp\discord-api\payloads\webhook.h" />
+    <ClInclude Include="include\discordhpp\discord-api\rest\common.h" />
+    <ClInclude Include="include\discordhpp\discord-api\rpc\common.h" />
     <ClInclude Include="include\discordhpp\discord-api\voice\v4.h" />
     <ClInclude Include="include\discordhpp\discord.h" />
     <ClInclude Include="include\discordhpp\fmt\args.h" />
