@@ -70,42 +70,9 @@ enum ChannelType
 	GuildForum,
 };
 
-int TextChannelType = {
-	DM 
-	| GroupDM 
-	| GuildNews
-	| GuildPublicThread
-	| GuildPrivateThread
-	| GuildNewsThread
-	| GuildText
-	| GuildForum
-};
-
 enum ChannelFlags
 {
 	Pinned = 1 << 1,
-};
-
-/**
- * This struct is used to allow easy extension for other channel types. While
- * also allowing `APIPartialChannel` to be used without breaking.
- */
-template<ChannelType value>
-struct APIChannelBase : APIPartialChannel
-{
-	ChannelType type;
-	std::optional<ChannelFlags> flags;
-};
-
-int GuildChannelType = {
-	GuildText 
-	| GuildForum
-	| GuildVoice 
-	| GuildNews 
-	| GuildNewsThread 
-	| GuildPublicThread 
-	| GuildPrivateThread 
-	| GuildStageVoice 
 };
 
 /**

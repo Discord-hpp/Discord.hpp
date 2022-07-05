@@ -54,7 +54,8 @@ enum VoiceOpcodes
 	ClientDisconnect,
 };
 
-enum VoiceCloseCodes {
+enum VoiceCloseCodes 
+{
 	/**
 	 * You sent an invalid opcode
 	 */
