@@ -86,4 +86,3 @@ enum ActivityFlags
 	Embedded = 1 << 8,
 };
 
-
