@@ -3,6 +3,7 @@
 #include <cmath>
 #include <string>
 
+#include "guild.h"
 #include "../globals.h"
 
 /**

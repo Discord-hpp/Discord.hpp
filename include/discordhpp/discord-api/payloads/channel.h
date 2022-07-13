@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <optional>
 
 #include "emoji.h"
 #include "user.h"
@@ -69,6 +70,11 @@ enum ChannelType
 	GuildForum,
 };
 
+enum ChannelFlags
+{
+	Pinned = 1 << 1,
+};
+
 /**
  * Not documented, but partial only includes id, name, and type
  */
@@ -100,4 +106,25 @@ enum VideoQualityMode
 	 * 720p
 	 */
 	Full,
+};
+
+/**
+ * https://discord.com/developers/docs/interactions/message-components#button-object-button-styles
+ */
+enum ButtonStyle
+{
+	Primary = 1,
+	Secondary,
+	Success,
+	Danger,
+	Link,
+};
+
+/**
+ * https://discord.com/developers/docs/interactions/message-components#text-inputs-text-input-styles
+ */
+enum TextInputStyle 
+{
+	Short = 1,
+	Paragraph,
 };

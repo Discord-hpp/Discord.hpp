@@ -7,49 +7,7 @@
 #include "user.h"
 #include "../globals.h"
 
-struct APIGatewayInfo
-{
-	/**
-	 * The WSS URL that can be used for connecting to the gateway
-	 */
-	std::string url;
-};
 
-struct APIGatewaySessionStartLimit
-{
-	/**
-	 * The total number of session starts the current user is allowed
-	 */
-	unsigned int total;
-	/**
-	 * The remaining number of session starts the current user is allowed
-	 */
-	unsigned int remaining;
-	/**
-	 * The number of milliseconds after which the limit resets
-	 */
-	unsigned int reset_after;
-	/**
-	 * The number of identify requests allowed per 5 seconds
-	 */
-	unsigned int max_concurrency;
-};
-
-struct APIGatewayBotInfo : APIGatewayInfo
-{
-	/**
-	 * The recommended number of shards to use when connecting
-	 *
-	 * See https://discord.com/developers/docs/topics/gateway#sharding
-	 */
-	unsigned int shards;
-	/**
-	 * Information on the current session start limit
-	 *
-	 * See https://discord.com/developers/docs/topics/gateway#session-start-limit-object
-	 */
-	APIGatewaySessionStartLimit session_start_limit;
-};
 
 struct PresenceUpdateStatus
 {
@@ -110,20 +68,7 @@ enum ActivityType
 	Competing,
 };
 
-/**
- * https://discord.com/developers/docs/topics/gateway#activity-object-activity-timestamps
- */
-struct GatewayActivityTimestamps 
-{
-	/**
-	 * Unix time (in milliseconds) of when the activity started
-	 */
-	std::optional<unsigned int> start;
-	/**
-	 * Unix time (in milliseconds) of when the activity ends
-	 */
-	std::optional<unsigned int> end;
-};
+
 
 /**
  * https://discord.com/developers/docs/topics/gateway#activity-object-activity-flags
@@ -141,14 +86,3 @@ enum ActivityFlags
 	Embedded = 1 << 8,
 };
 
-struct GatewayActivityButton
-{
-	/**
-	 * The text shown on the button (1-32 characters)
-	 */
-	std::string label;
-	/**
-	 * The url opened when clicking the button (1-512 characters)
-	 */
-	std::string url;
-};
