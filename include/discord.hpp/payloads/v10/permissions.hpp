@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 #include <optional>
 #include "../global.hpp"
@@ -6,7 +8,7 @@ class APIRoleTags
 {
 public:
 	std::optional<Snowflake> bot_id;
-	std::optional<int*> premium_subscriber = nullptr; // whether this is the guild's premium subscriber role
+	std::optional<int*> premium_subscriber;
 	std::optional<Snowflake> integration_id;
 };
 

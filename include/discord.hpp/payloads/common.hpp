@@ -1,3 +1,5 @@
+#pragma once
+
 enum class PermissionFlagsBits
 {
 	CreateInstantInvite = 1 << 0,
