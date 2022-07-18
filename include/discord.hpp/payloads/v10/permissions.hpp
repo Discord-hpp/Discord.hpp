@@ -6,7 +6,7 @@ class APIRoleTags
 {
 public:
 	std::optional<Snowflake> bot_id;
-	int premium_subscriber = NULL;
+	int premium_subscriber = NULL; // whether this is the guild's premium subscriber role
 	std::optional<Snowflake> integration_id;
 };
 

@@ -116,4 +116,3 @@ struct GatewayDispatchEvents
 	std::string GuildScheduledEventUserAdd = "GUILD_SCHEDULED_EVENT_USER_ADD";
 	std::string GuildScheduledEventUserRemove = "GUILD_SCHEDULED_EVENT_USER_REMOVE";
 };
-
