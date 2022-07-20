@@ -1,1 +1,5 @@
-.vscode
+# Visual Studio
+.vs
+
+# Build file
+out
