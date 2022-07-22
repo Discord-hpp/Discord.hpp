@@ -1,7 +1,10 @@
 #pragma once
 
-class APIGuildIntegration
+#include "../../global.hpp"
+
+class APIUnavailableGuild
 {
 public:
-    // Under-construction
+	Snowflake id;
+	bool unavailable;
 };

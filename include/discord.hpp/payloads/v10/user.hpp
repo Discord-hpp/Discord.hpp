@@ -15,11 +15,11 @@ public:
 	std::optional<bool> bot;
 	std::optional<bool> system;
 	std::optional<bool> mfa_enabled;
-	std::optional<std::string> banner;
-	std::optional<int> accent_color;
+	std::optional<std::string> banner; // string | null
+	std::optional<int> accent_color; // string | null
 	std::optional<std::string> locale;
 	std::optional<bool> verified;
-	std::optional<std::string> email;
+	std::optional<std::string> email; // string | null
 	std::optional<UserFlags> flags;
 	std::optional<UserPremiumType> premium_type;
 	std::optional<UserFlags> public_flags;
