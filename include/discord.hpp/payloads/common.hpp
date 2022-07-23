@@ -1,6 +1,6 @@
 #pragma once
 
-enum PermissionFlagsBits
+enum class PermissionFlagsBits
 {
 	CreateInstantInvite = 1 << 0,
 	KickMembers = 1 << 1,
